@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Weather Forecast
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This website will allow you to get the 5 day forecast in any city in celcius or farenheit.
 
-## Available Scripts
+![Screenshot of weather forecast website](./src/Screenshot%202025-03-26%20at%2011.19.56 PM.png);
 
-In the project directory, you can run:
+##How It's Made
 
-### `npm start`
+###Tech used: HTML, CSS, Javascript, React, Emotion
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This weather forecast website utilizes API fetch to find the longitude and latitude of any city inputted into the search box and then use that data to fetch the weather forecast for the next 5 days based on that information.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+It includes a button that allows users to switch from the metric system to the imperial system by changing the contents of the API fetch based on whether the unit has been set to imperial or metric based on the button click. 
 
-### `npm test`
+It also includes a button that allows users to switch to a dark mode theme, switching the prop accessed by theme based on whether the app is set IsDarkMode or not.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##Lessons Learned:
+This project was my first attempt to utilize React components that I have been studying about, such as API fetch requests, useState, useEffect and the Emotion library. 
 
-### `npm run build`
+Getting accurate weather data presented a bit of a challenge, as random weather points were being displayed. In an attempt to pick a data point that was the most representative of the day's weather, I used a condition to retrieve the information closest to noon for each day so as to retrieve information from midday.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In the future I hope to implement hourly forcasts as well as the ability to pin cities to a user's favorited cities for easier access. 
