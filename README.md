@@ -2,7 +2,7 @@
 
 This website will allow you to get the 5 day forecast in any city in celcius or farenheit.
 
-![Screenshot of weather forecast website](./src/Screenshot%202025-03-26%20at%2011.19.56 PM.png);
+![Screenshot of weather forecast website](./src/screenshot.png)
 
 ##How It's Made
 
